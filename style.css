@@ -15,6 +15,7 @@ section{
     align-items: center;
     justify-content: center;
     color: #fff;
+    perspective: 1000px;
 }
 
 section::before{
@@ -41,8 +42,14 @@ section::after{
     height: 225px;
     width: 375px;
     z-index: 100;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+.container:hover{
+    transform: rotateY(180deg);
 }
 .container .card{
+    position: absolute;
     height: 100%;
     width: 100%;
     padding: 25px;
@@ -51,6 +58,7 @@ section::after{
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    backface-visibility: hidden;
 }
 .frontFace header,
 .frontFace .logo{
@@ -91,6 +99,7 @@ h5.name{
 .card.backFace{
     border: none;
     padding: 15px 25px 25px 25px;
+    transform: rotateY(180deg);
 }
 .card.backFace h6{
     font-size: 8px;
