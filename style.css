@@ -88,3 +88,41 @@ h5.number{
 h5.name{
     margin-top: 20px;
 }
+.card.backFace{
+    border: none;
+    padding: 15px 25px 25px 25px;
+}
+.card.backFace h6{
+    font-size: 8px;
+}
+.card.backFace .magneticStrip{
+    position: absolute;
+    top:40px;
+    left: 0;
+    height: 45px;
+    width:100%;
+    background: #000;
+}
+.card.backFace .singture{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 80px;
+    height: 40px;
+    width: 85%;
+    border-radius: 6px;
+    background: repeating-linear-gradient(#fff, #fff 3px, #efefef 0px, #efefef 9px );
+}
+.singture i{
+    color: #000;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: -30px;
+    z-index: -1;
+}
+.card.backFace h5{
+    font-size: 8px;
+    margin-top: 15px;
+}
