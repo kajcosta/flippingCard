@@ -14,6 +14,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 section::before{
@@ -36,11 +37,54 @@ section::after{
     background: linear-gradient(90deg, #9c27b0, #f3f5f5);
 }
 .container{
-    height: 275px;
-    width: 275px;
+    position: relative;
+    height: 225px;
+    width: 375px;
+    z-index: 100;
 }
 .container .card{
     height: 100%;
     width: 100%;
+    padding: 25px;
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
     background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.frontFace header,
+.frontFace .logo{
+    display: flex;
+    align-items: center;
+}
+.frontFace header{
+    justify-content: space-between;
+}
+.frontFace .logo img{
+    width: 45px;
+    margin-right: 10px;
+}
+h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+.frontFace .chip{
+    width: 50px;
+}
+.frontFace .cardDetails{
+    display: flex; 
+    margin-top: 40px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+h6{
+    font-size: 10px;
+    font-weight: 400;
+}
+h5.number{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+h5.name{
+    margin-top: 20px;
 }
